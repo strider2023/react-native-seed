@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import HomeScreen from './src/components/screens/home-screen';
+import HomeScreen from './src/components/screens/HomeScreen';
 import ImagesScreen from './src/components/screens/images-screen';
 import LoginScreen from './src/components/screens/LoginScreen';
+import { Provider as PaperProvider } from 'react-native-paper';
 import {createStackNavigator} from 'react-navigation';
 
 const RootStack = createStackNavigator(
@@ -16,6 +17,10 @@ const RootStack = createStackNavigator(
 
 export default class App extends Component {
   render() {
-    return <RootStack /> ;
+    return (
+      <PaperProvider>
+        <RootStack />
+      </PaperProvider>
+    );
   }
 }

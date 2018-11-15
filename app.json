@@ -1,8 +1,8 @@
 {
   "expo": {
-    "name": "DummyProject",
+    "name": "React Seed",
     "description": "A very interesting project.",
-    "slug": "DummyProject",
+    "slug": "ReactSeed",
     "privacy": "public",
     "sdkVersion": "31.0.0",
     "platforms": ["ios", "android"],
